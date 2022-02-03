@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DOC FLIX</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% load staticfiles %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">shvgu23@gmail.com</a>
+        <i class="bi bi-phone"></i> +91 7289004188
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="bi bi-translate"></i> <a href="/hindi">Click here to Translate this web page into Hindi</a>
+        </button>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://github.com/shourya-gupta/DOC-FLIX" class="github" , target = "_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="youtube", target = "_blank"><i class="bi bi-youtube"></i></a>
+        <!--a href="#" class="instagram"><i class="bi bi-instagram"></i></a-->
+        <a href="https://www.linkedin.com/in/shourya-gupta-38a7791b6/" class="linkedin", target = "_blank"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Do you wish to translate this webpage into Hindi?<br><hr>
+
+              क्या  आप इस वेबसाइट को हिंदी में देखना चाहते हो?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="/hindi"><button type="button" class="btn btn-primary">Yes</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="#">DOC-FLIX</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!--<a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="/user/login">Login/Sign up</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>-->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#services" class="appointment-btn scrollto"><span class="d-none d-md-inline">START</span> your diagnosis</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to DOC-FLIX</h1>
+      <h2>Team Phoenix</h2>
+      <a href="#services" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose Docflix?</h3>
+              <p>
+               Our objective is to identify your point of care. And then, recommend you the appropriate medical practioner as well as predict the disease you might be suffering from. 
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Point of Discomfort</h4>
+                    <p>With the help of Computer Vision - a field of AI. We will get to know the area better, where you are facing problem.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Prediction & Diagnosis</h4>
+                    <p>Advancement of Machine Learning, gives us the strength to predict the disease you might be facing. Also, we will tell you the medical specialist you should visit.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Report Generation</h4>
+                    <p>We will generate a report based on the information provided by the patient, so that doctor knows about you before you actually meet them.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Team Phoenix - Ritik, Shourya, Ridhika, Kshitij</h3>
+            <p>As the majority of people aren't aware of exactly what kind of illness/pain/discomfort they are facing. We tend to provide them with a better perspective about it. Our solution works on identifying the pin-point location where the user is having issues, as they point their finger towards it. Also, with the help of customised questions we recommend probable medical issues the user might be suffering with. Main focus of the website is to, recommend the best possible Medical Practitioner following the medical issue found. Also, we generate a report based on the information provided by the user to the Doctor / Medical Practitioner for ease of understanding and efficient conversation.</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-brain"></i></div>
+              <h4 class="title"><a href="">Predict & Recommend</a></h4>
+              <p class="description">Out of 163 diseases and 453 symptoms. We will try our best to predict the disease you might be suffering from. Also, we will let you know the medical practitioner you should be referring to!</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-bullseye"></i></div>
+              <h4 class="title"><a href="">Point of Care - Identification</a></h4>
+              <p class="description">At DOC-FLIX, we focus on patients, who are unaware with the medical terms related to their body parts. And, aren't able to arrive at a conclusion to consult the best medical practitioner for their problem.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Report</a></h4>
+              <p class="description">Don't you think, most of the time of your medical appointments is spent on making the doctor understand your problem? Well, we got you covered, with DOC-FLIX we will provide you, as well as the Doctor a report based on the details before your appointment with the Medical Practitioner.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="fas fa-virus"></i>
+              <span data-purecounter-start="0" data-purecounter-end="163" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Diseases</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="fas fa-notes-medical"></i>
+              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Symptoms</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-skull"></i>
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Body Parts</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <p>We provide a variety of services. <br>Based upon your convenience you can go for - <b>Open video camera</b>, <b>Upload your video</b>, or <b>Go straight to disease prediction by providing us a couple of answers to know your symptoms better</b></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-camera"></i></div>
+              <h4><a href = "#">Open your webcam</a></h4>
+              <p>We will provide a couple of instructions ahead. So that without you explicitly telling us the body part, we will identify it ourselves. </p>
+              <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="webcamModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">General Information:<br>
+                  (Agreement to terms - in future)</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>We have taken our dataset from New York-Presbyterian Hospital.
+                      <a href = "https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html", target="_blank">Link to the dataset </a>
+                    </li> 
+                    <li>Our dataset consists of - 156 diseases, 453 symptoms</li>
+                    <li>The dataset is manually clustered based on body parts.</li>
+                    <li>We have a total of 13 body parts, and 26 different types of medical specialists
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                  <a href = "./product1"><button type="button" class="btn btn-primary">Accept</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-video"></i></div>
+              <h4><a href="">Upload a short video</a></h4>
+              <p>Shy to get in front of camera? Or your webcam isn't working? Well, you can provide us a short video - with the help of rules specified ahead.</p>
+              <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4><a href="">Predict my Disease</a></h4>
+              <p>If you are fully aware of the point of discomfort in your body, let us go straight to understand your symptoms, without wasting time. </p>
+              <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Doctors</h2>
+          <p>Some of the best doctors who use our website, and believe that the appointment time should be used efficiently! You can take appointment from them and we will provide them your details in a form of report beforehand. </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Demo</h4>
+                <span>Skin Specialist</span>
+                <p>MBBS, M.D - Demo</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Demo</h4>
+                <span>Anesthesiologist</span>
+                <p>MBBS, M.D - Demo</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Demo</h4>
+                <span>Cardiology</span>
+                <p>MBBS, M.D - Demo</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-4.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Demo</h4>
+                <span>Neurosurgeon</span>
+                <p>MBBS, M.D - Demo</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Make an Appointment</h2>
+          <p><b>Receive top quality medical care from the doctors associated with DOCFLIX. </b><br>Fill out the form given below, and when you click on 'Make an Appointment', a PDF of your report will be downloaded on your device. This report will also be sent over to the doctor selected by you. 
+          <br>
+          <small>Report consists of Patient's Basic Details, symptoms, disease predicted, doctor suggested, and any other optional message provided by the patient</small>
+          </p>
+        </div>
+        <a href="/user/login">
+        <form action="" method="post">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="department" class="form-select">
+                <option value="">Select Medical Specialist</option>
+                <option value="Department 1">Bariatrician</option>
+                <option value="Department 2">Breast Surgeon</option>
+                <option value="Department 3">Cardiologist</option>
+                <option value="Department 4">Dermatologist</option>
+                <option value="Department 5">Endocrinologist</option>
+                <option value="Department 6">Gastroenterologist</option>
+                <option value="Department 7">General Physician</option>
+                <option value="Department 8">General Surgeon</option>
+                <option value="Department 9">Hematologist</option>
+                <option value="Department 10">Hepatologist</option>
+                <option value="Department 11">Infectious Disease Doctor</option>
+                <option value="Department 12">Lymphologists</option>
+                <option value="Department 13">Nephrologist</option>
+                <option value="Department 14">Neurologist</option>
+                <option value="Department 15">Neuropathy</option>
+                <option value="Department 16">Obstetrician</option>
+                <option value="Department 17">Oncologist</option>
+                <option value="Department 18">Ophthalmologist</option>
+                <option value="Department 19">Orthopedic Surgeon</option>
+                <option value="Department 20">Orthopedician</option>
+                <option value="Department 21">Otolaryngologists</option>
+                <option value="Department 22">Psychiatrist</option>
+                <option value="Department 23">Pulmonologist</option>
+                <option value="Department 24">Rheumatologist</option>
+                <option value="Department 25">Urologist</option>
+                <option value="Department 26">Vascular Surgeon</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select">
+                <option value="">Select Doctor from DOCFLIX</option>
+                <option value="Doctor 1">Demo 1</option>
+                <option value="Doctor 2">Demo 2</option>
+                <option value="Doctor 3">Demo 3</option>
+                <option value="Doctor 4">Demo 4</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="text-center"><button type="submit" class="btn-primary" onclick="alert('Login first')">Make an Appointment</button></div>
+        </form>
+      </a>
+      </div>
+    </section><!-- End Appointment Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Queries and Suggestions - are fuel in the race of success. If you have any, reach out to us. We will be happy to serve you!</p>
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.767040005396!2d77.7467707!3d12.9915563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea74ebd19a4c6568!2sWipro%20GE%20Healthcare%20Limited!5e0!3m2!1sen!2sin!4v1643310009059!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>4, Whitefield Main Rd, Sadaramangala Industrial Area, Kadugodi, Bengaluru, Karnataka 560067</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>shvgu23@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 7289004188</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            {% if Key == "yes" %}
+            <form action="#contact" method="POST">
+              {%csrf_token%}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit" class="btn-primary">Send Message</button></div>
+            </form>
+            {% else %}
+            <div style="text-align:center;">
+            <h2>Your response has been recorded.</h2>
+            <br>
+            <h3>We will get back to you soon.&#128512;</h3>
+          </div>
+            {% endif %}
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!--div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Medilab</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div-->
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &#10084; Made with love by <strong><span>Team Phoenix</span></strong>
+        </div>
+        <!--div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div-->
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/shourya-gupta/DOC-FLIX" class="github", target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="youtube", target="_blank"><i class="bx bxl-youtube"></i></a>
+        <!--a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a-->
+        <a href="https://www.linkedin.com/in/shourya-gupta-38a7791b6/" class="linkedin", target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+  <script>
+        $('#exampleModalCenter').modal('show'); 
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
