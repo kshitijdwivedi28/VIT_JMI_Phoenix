@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>डॉकफ्लिक्स</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% load staticfiles %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">shvgu23@gmail.com</a>
+        <i class="bi bi-phone"></i> +91 7289004188
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="bi bi-translate"></i> <a href="/">Click here to Translate this web page into English</a>
+        </button>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://github.com/shourya-gupta/DOC-FLIX" class="github" , target = "_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="youtube", target = "_blank"><i class="bi bi-youtube"></i></a>
+        <!--a href="#" class="instagram"><i class="bi bi-instagram"></i></a-->
+        <a href="https://www.linkedin.com/in/shourya-gupta-38a7791b6/" class="linkedin", target = "_blank"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Do you want this website to switch in english
+              <br>
+              क्या आप इस वेबसाइट को अंग्रेज़ी में देखना चाहते हो?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="/"><button type="button" class="btn btn-primary">Yes</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="#">डॉकफ्लिक्स</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!--<a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">होम पेज</a></li>
+          <li><a class="nav-link scrollto" href="#about">हमारे बारे में</a></li>
+          <li><a class="nav-link scrollto" href="#services">सेवाएं</a></li>
+          <li><a class="nav-link scrollto" href="/user/login">लॉग इन करें / साइन अप करें</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">चिकित्सक</a></li>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>-->
+          <li><a class="nav-link scrollto" href="#contact">संपर्क करें</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#services" class="appointment-btn scrollto"><span class="d-none d-md-inline">निदान शूरू करे</span></a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>डॉकफ्लिक्स में आपका स्वागत है</h1>
+      <h2>टीम फीनिक्स</h2>
+      <a href="#services" class="btn-get-started scrollto">शुरू करे</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>डॉकफ्लिक्स क्यों चुनें?</h3>
+              <p>
+                हमारा उद्देश्य आपकी देखभाल के बिंदु की पहचान करना है। और फिर, आपको उपयुक्त चिकित्सक की सिफारिश करने के साथ-साथ उस बीमारी की भविष्यवाणी करने की सलाह दी जाती है जिससे आप पीड़ित हो सकते हैं।
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">और अधिक जानें<i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>बेचैनी/असहजता/असुविधा का बिंदु</h4>
+                    <p>कंप्यूटर विजन एआई का एक क्षेत्र है। इसकी मदद से हमें असुविधा के क्षेत्र पर सही तरीके से पहुंच पाएंगे एवं बेहतर तरीके से जान पाएंगे।</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>अनुमान एवं निदान</h4>
+                    <p>मशीन लर्निंग की उन्नति, हमें उस बीमारी का अनुमान लगाने की ताकत देती है जिसका आप सामना कर रहे हैं। साथ ही, हम आपको उस चिकित्सा विशेषज्ञ के बारे में भी बताएंगे, जिसके पास आपको जाना चाहिए।</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>प्रतिवेदन / रिपोर्ट तैयार करना</h4>
+                    <p>हम रोगी द्वारा प्रदान की गई जानकारी के आधार पर एक रिपोर्ट तैयार करेंगे, ताकि डॉक्टर वास्तव में उनसे मिलने से पहले आपके बारे में जान सकें।</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>टीम फ़ीनिक्स - ऋतिक, शौर्या, रिधिका, क्षितिज</h3>
+            <p>चूंकि अधिकांश लोगों को इस बात की जानकारी नहीं है कि वे किस प्रकार की बीमारी/दर्द/असुविधा का सामना कर रहे हैं। हम उन्हें इसके बारे में बेहतर दृष्टिकोण प्रदान करते हैं। हमारा समाधान उस पिनपॉइंट स्थान की पहचान करने पर काम करता है जहां उपयोगकर्ता को समस्या हो रही है, क्योंकि वे अपनी उंगली उस ओर इंगित करते हैं। साथ ही, अनुकूलित प्रश्नों की सहायता से हम उन संभावित चिकित्सीय समस्याओं की अनुशंसा करते हैं जिनसे उपयोगकर्ता पीड़ित हो सकता है। वेबसाइट का मुख्य फोकस चिकित्सा समस्या मिलने के बाद सर्वोत्तम संभव चिकित्सा व्यवसायी की सिफारिश करना है। साथ ही, हम प्रदान की गई जानकारी के आधार पर एक रिपोर्ट तैयार करते हैं।</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-brain"></i></div>
+              <h4 class="title"><a href="">अनुमान एवं अनुशंसा</a></h4>
+              <p class="description">156 बीमारियों और 453 लक्षणों में से, हम उस बीमारी का अनुमान लगाने की पूरी कोशिश करेंगे जिससे आप पीड़ित हो सकते हैं। साथ ही, हम आपको बताएंगे कि आपको किस चिकित्सक के पास जाना चाहिए!</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-bullseye"></i></div>
+              <h4 class="title"><a href="">देखभाल के बिंदु - पहचान</a></h4>
+              <p class="description">डॉकफ्लिक्स में, हम उन रोगियों पर ध्यान केंद्रित करते हैं, जो नहीं जानते कि उनके शरीर के किस अंग को क्या कहा जाता है? और, हम उनकी समस्या के लिए सर्वश्रेष्ठ चिकित्सक का निष्कर्ष निकालने में उनकी मदद करते हैं।</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">प्रतिवेदन / रिपोर्ट</a></h4>
+              <p class="description">क्या आपको नहीं लगता, आपकी मुलाकात का ज्यादातर समय डॉक्टर को समस्या समझाने में ही बीत जाता है? खैर, DOC-FLIX के साथ हम आपकी बैठक से पहले डॉक्टर को एक प्रतिवेदन (दिए गए विवरण के आधार पर) प्रदान करेंगे।</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="fas fa-virus"></i>
+              <span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="1" class="purecounter"></span>
+              <p>रोग</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="fas fa-notes-medical"></i>
+              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>लक्षण</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
+              <p>विभाग</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-skull"></i>
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
+              <p>शरीर के अंग</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>हमारी सेवाएँ</h2>
+          <p>हम विभिन्न प्रकार की सेवाएं प्रदान करते हैं। <br>आप अपनी सुविधा के अनुसार जा सकते हैं -<b>वीडियो कैमरा खोलें</b>, <b>अपना वीडियो अपलोड करें</b>, या <b>अपने लक्षणों को बेहतर तरीके से जानने के लिए हमें कुछ उत्तर प्रदान करके सीधे रोग पूर्वानुमान पर जाएं</b></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-camera"></i></div>
+              <h4><a href="">अपना वेब कैमरा ऑन करें</a></h4>
+              <p>हम आगे कुछ निर्देश प्रदान करेंगे। ताकि हम दर्द/असुविधा पैदा करने वाले शरीर के अंग की बेहतर पहचान कर सकें</p>
+            <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="webcamModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">सामान्य जानकारी:<br>
+                  (शर्तों की स्वीकृति)</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>हमने अपना डेटासेट न्यूयॉर्क-प्रेस्बिटेरियन अस्पताल से लिया है।
+                      <a href = "https://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html", target="_blank">Link to the dataset </a>
+                    </li> 
+                    <li>हमारे डेटासेट में 156 रोग और 453 लक्षण शामिल हैं।</li>
+                    <li>डेटासेट को शरीर के अंगों के आधार पर मैन्युअल रूप से समूह किया गया है।</li>
+                    <li>हमारे पास कुल 13 शरीर के अंग हैं, और 26 विभिन्न प्रकार के चिकित्सा विशेषज्ञ हैं।</li>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                  <a href = "./product1"><button type="button" class="btn btn-primary">Accept</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-video"></i></div>
+              <h4><a href="">वीडियो अपलोड करें</a></h4>
+              <p>कैमरे के सामने नहीं आना चाहते? या आपका वेबकैम काम नहीं कर रहा है? कोई चिंता नहीं, आप हमें एक छोटा वीडियो प्रदान कर सकते हैं - आगे निर्दिष्ट नियमों की सहायता से।</p>
+            <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4><a href="">बीमारी का अनुमान करें</a></h4>
+              <p>यदि आप अपने शरीर में बेचैनी के बिंदु से पूरी तरह अवगत हैं, तो आइए बिना समय बर्बाद किए, सीधे आपके लक्षणों को बेहतर ढंग से समझने के लिए चलते हैं।</p>
+            <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webcamModalCenter">Click Here</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>चिकित्सक</h2>
+          <p>कुछ बेहतरीन डॉक्टर जो हमारी वेबसाइट का उपयोग करते हैं, और मानते हैं कि नियुक्ति के समय का कुशलतापूर्वक उपयोग किया जाना चाहिए! आप उनसे अपॉइंटमेंट ले सकते हैं और हम उन्हें रिपोर्ट के रूप में आपका विवरण प्रदान करेंगे।</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>डेमो चिकित्सक</h4>
+                <span>त्वचा विशेषज्ञ</span>
+                <p>एमबीबीएस, एमडी</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>डेमो चिकित्सक</h4>
+                <span>निश्चेतना विशेषज्ञ</span>
+                <p>एमबीबीएस, एमडी</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>डेमो चिकित्सक</h4>
+                <span>हृदय विशेषज्ञ</span>
+                <p>एमबीबीएस, एमडी</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/doctors/doctors-4.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>डेमो चिकित्सक</h4>
+                <span>न्यूरोसर्जन</span>
+                <p>एमबीबीएस, एमडी</p>
+                <br>
+                <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book</span> your appointment</a>
+                <!--div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>चिकित्सक से मिलिए</h2>
+          <p><b>डॉकफ्लिक्स से जुड़े डॉक्टरों से उच्च गुणवत्ता वाली चिकित्सा देखभाल प्राप्त करने के लिए, </b><br>अपने विवरण के साथ नीचे दिए गए फॉर्म को भरें, और जब आप 'मेक अ अपॉइंटमेंट' पर क्लिक करते हैं, तो आपकी डिवाइस पर आपकी रिपोर्ट की एक पीडीएफ़ डाउनलोड हो जाएगी। यह रिपोर्ट आपके द्वारा चुने गए डॉक्टर को भी भेजी जाएगी।. 
+          <br>
+          <small>रिपोर्ट में रोगी का मूल विवरण, लक्षण, रोग का अनुमान, विभाग का सुझाव और रोगी द्वारा प्रदान किया गया कोई अन्य वैकल्पिक संदेश शामिल होगा।</small>
+          </p>
+        </div>
+        <a href="/user/login">
+        <form action="" method="post">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="आपका शुभ नाम" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="आपका ईमेल" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="आपका फोन नंबर" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime" name="मिलने की तिथि" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="department" class="form-select">
+                <option value="">चिकित्सक का चयन करें</option>
+                <option value="Department 1">बेरिएट्रिशियन</option>
+                <option value="Department 2">स्तन सर्जन</option>
+                <option value="Department 3">हृदय रोग विशेषज्ञ</option>
+                <option value="Department 4">त्वचा विशेषज्ञ</option>
+                <option value="Department 5">एंडोक्राइनोलॉजिस्ट</option>
+                <option value="Department 6">जठरांत्र चिकित्सक</option>
+                <option value="Department 7">सामान्य चिकित्सक</option>
+                <option value="Department 8">सामान्य सर्जन</option>
+                <option value="Department 9">रुधिर विशेषज्ञ</option>
+                <option value="Department 10">हेपेटोलॉजिस्ट</option>
+                <option value="Department 11">संक्रामक रोग चिकित्सक</option>
+                <option value="Department 12">लिम्फोलॉजिस्ट</option>
+                <option value="Department 13">नेफ्रोलॉजिस्ट</option>
+                <option value="Department 14">न्यूरोलॉजिस्ट</option>
+                <option value="Department 15">न्यूरोपैथी</option>
+                <option value="Department 16">दाई</option>
+                <option value="Department 17">ऑन्कोलॉजिस्ट</option>
+                <option value="Department 18">नेत्र-विशेषज्ञ</option>
+                <option value="Department 19">हड्डी शल्य चिकित्सक</option>
+                <option value="Department 20">हड्डी रोग विशेषज्ञ</option>
+                <option value="Department 21">कर्ण व स्वरतंत्र विशेषज्ञ</option>
+                <option value="Department 22">मनोचिकित्सक</option>
+                <option value="Department 23">फुफ्फुसीय रोग विशेषज्ञ</option>
+                <option value="Department 24">ह्रुमेटोलॉजिस्ट</option>
+                <option value="Department 25">मूत्र रोग विशेषज्ञ</option>
+                <option value="Department 26">वैस्कुलर सर्जन</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select">
+                <option value="">चिकित्सक का चयन करें</option>
+                <option value="Doctor 1">डेमो 1</option>
+                <option value="Doctor 2">डेमो 2</option>
+                <option value="Doctor 3">डेमो 3</option>
+                <option value="Doctor 4">डेमो 4</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="संदेश (वैकल्पिक)"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="text-center"><button type="submit" onclick="alert('Login first')">चिकित्सक से मिलिए</button></div>
+        </form>
+      </a>
+      </div>
+    </section><!-- End Appointment Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>हमसे संपर्क करे</h2>
+          <p>प्रश्न और सुझाव - सफलता की दौड़ में ईंधन हैं। यदि आपके पास कोई है, तो हमसे संपर्क करें। हमें आपकी सेवा करने में खुशी होगी!</p>
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.767040005396!2d77.7467707!3d12.9915563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea74ebd19a4c6568!2sWipro%20GE%20Healthcare%20Limited!5e0!3m2!1sen!2sin!4v1643310009059!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>स्थान:</h4>
+                <p>4, व्हाइटफील्ड मेन रोड, सदारमंगला औद्योगिक क्षेत्र, कडुगोडी, बेंगलुरु, कर्नाटक 560067</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>ईमेल:</h4>
+                <p>shvgu23@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>फ़ोन:</h4>
+                <p>+91 7289004188</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            {% if Key == "yes" %}
+            <form action="#contact" method="POST">
+              {%csrf_token%}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+            {% else %}
+            <div style="text-align:center;">
+            <h2>आपका संदेश हमें प्राप्त हो गया है</h2>
+            <br>
+            <h3>हम आपसे जल्द ही संपर्क करेंगे।&#128512;</h3>
+          </div>
+            {% endif %}
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!--div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Medilab</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div-->
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &#10084; आपके लिए बनाया है<strong><span>टीम फीनिक्स द्वारा</span></strong>
+        </div>
+        <!--div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div-->
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://github.com/shourya-gupta/DOC-FLIX" class="github", target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.youtube.com/watch?v=7ldrNpzRkBQ" class="youtube", target="_blank"><i class="bx bxl-youtube"></i></a>
+        <!--a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a-->
+        <a href="https://www.linkedin.com/in/shourya-gupta-38a7791b6/" class="linkedin", target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+  <script>
+        $('#exampleModalCenter').modal('show'); 
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
