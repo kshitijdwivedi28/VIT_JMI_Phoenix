@@ -1,9 +1,9 @@
 # Precision Health Challenge 2021-22
 
-**DOCFLIX** - Recommends medical specialists. With the help of coputer vision, it makes it easier for people with less knowledge about medical domain. 
+**DOCFLIX** - Recommends medical specialists. With the help of computer vision, it makes it easier for people who lack in-depth knowledge of medical domain. 
 
 # Problem Statement
-As the majority of people aren't aware of exactly what kind of illness, pain or discomfort they are facing, we tend to provide them a better perspective about it. Our solution works on identifying the pin-point location where our user is experiencing pain or discomfort as they point their finger towards it, using Computer Vision.
+As the majority of people aren't aware of exactly what kind of illness, pain or discomfort they are suffering with, we tend to provide them a better perspective about it. Our solution works on identifying the pin-point location where our user is experiencing pain or discomfort as they point their finger towards it, using Computer Vision.
 
 Further, we ask a couple of questions customized to the affected area pointed by the user, to get a better understanding of the cause of the pain. Then by using Machine Learning Algorithm i.e., Decision Tree Classifier, we recommend possible medical issue(s) our user might be suffering with. Our star module, is to predict the best suited medical specialist for the disease diagnosed by the symptoms incurred. We also provide a document / report to the Doctor / Medical Specialist (if selected) by our user and to the user as well, which contains the Basic Details, Symptoms, Disease Predicted, and the other optional message, our user wants to convey to the Doctor beforehand.
 
