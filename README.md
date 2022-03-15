@@ -15,7 +15,7 @@ Further, we ask a couple of questions customized to the affected area pointed by
  - Machine Learning Algorithm i.e., Decision Tree Classifier is preferred which offers higher accuracy on the non-linear dataset considered for **DOCFLIX**.
  - Computer Vision providing the pin-point recognition of the discomfort region of the user.
  - Simplicity is favoured as the user just needs to point at the area of discomfort.
- - Waiting time for patients / users is drastically reduced for consultation by General Physicians / Doctors and at Hospitals.
+ - Waiting time for patients / users is drastically reduced for consultation by General Physicians / Doctors and at Hospitals OPD's.
  - **DOCFLIX** bridges the communication gap between Doctors and Patients.
  - Efficient usage of Time and Money as a potential resource in the field of medical facilities.
  - Ready Home Preparedness and Bilingual Support for the users.
